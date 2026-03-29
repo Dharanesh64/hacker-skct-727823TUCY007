@@ -1,0 +1,15 @@
+project_name: 727823TUCY007_NetworkVulnerabilityScanner
+
+stages:
+  - setup
+  - run
+  - analyze
+
+setup:
+  script: python3 code/setup_lab.py
+
+run:
+  script: python3 code/run_tool.py
+
+analyze:
+  script: python3 code/analyze_results.py
